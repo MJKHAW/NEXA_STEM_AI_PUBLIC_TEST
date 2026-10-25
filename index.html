@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXA STEM AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="city" aria-hidden="true">
+    <svg class="skyline" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMax slice">
+      <g class="stars">
+        <circle cx="80" cy="40" r="2"/><circle cx="160" cy="90" r="1.5"/><circle cx="250" cy="36" r="2"/>
+        <circle cx="420" cy="70" r="1.6"/><circle cx="560" cy="28" r="2"/><circle cx="690" cy="84" r="1.4"/>
+        <circle cx="860" cy="42" r="2"/><circle cx="1020" cy="76" r="1.6"/><circle cx="1180" cy="30" r="2"/>
+        <circle cx="1320" cy="68" r="1.5"/><circle cx="980" cy="24" r="1.4"/>
+      </g>
+      <circle cx="1180" cy="92" r="36" fill="#f8e7a8"/>
+      <circle cx="1196" cy="84" r="30" fill="#123a78"/>
+      <path d="M0 300 C180 250 280 340 460 300 C680 250 760 360 980 310 C1160 270 1280 330 1440 290 L1440 520 L0 520 Z" fill="#0c4c86" opacity="0.55"/>
+      <g fill="#12345f">
+        <rect x="40" y="250" width="90" height="190"/>
+        <rect x="150" y="210" width="70" height="230"/>
+        <polygon points="185,150 150,210 220,210"/>
+        <rect x="250" y="180" width="120" height="260" rx="8"/>
+        <rect x="400" y="230" width="80" height="210"/>
+        <rect x="500" y="160" width="56" height="280"/>
+        <rect x="580" y="200" width="140" height="240" rx="16"/>
+        <rect x="750" y="240" width="90" height="200"/>
+        <rect x="860" y="150" width="70" height="290"/>
+        <polygon points="895,90 860,150 930,150"/>
+        <rect x="960" y="210" width="130" height="230" rx="10"/>
+        <rect x="1120" y="190" width="80" height="250"/>
+        <rect x="1220" y="230" width="150" height="210" rx="18"/>
+      </g>
+      <g class="lights">
+        <rect class="light" x="58" y="270" width="14" height="16"/><rect class="light" x="84" y="270" width="14" height="16"/>
+        <rect class="light" x="58" y="304" width="14" height="16"/><rect class="light" x="84" y="304" width="14" height="16"/>
+        <rect class="light" x="168" y="236" width="12" height="14"/><rect class="light" x="190" y="236" width="12" height="14"/>
+        <rect class="light" x="168" y="268" width="12" height="14"/><rect class="light" x="190" y="268" width="12" height="14"/>
+        <rect class="light" x="272" y="210" width="16" height="18"/><rect class="light" x="304" y="210" width="16" height="18"/>
+        <rect class="light" x="336" y="210" width="16" height="18"/><rect class="light" x="272" y="248" width="16" height="18"/>
+        <rect class="light" x="304" y="248" width="16" height="18"/><rect class="light" x="336" y="248" width="16" height="18"/>
+        <rect class="light" x="418" y="256" width="14" height="16"/><rect class="light" x="444" y="256" width="14" height="16"/>
+        <rect class="light" x="418" y="290" width="14" height="16"/><rect class="light" x="444" y="290" width="14" height="16"/>
+        <rect class="light" x="514" y="190" width="12" height="18"/><rect class="light" x="532" y="190" width="12" height="18"/>
+        <rect class="light" x="514" y="226" width="12" height="18"/><rect class="light" x="532" y="226" width="12" height="18"/>
+        <rect class="light" x="604" y="230" width="18" height="16"/><rect class="light" x="640" y="230" width="18" height="16"/>
+        <rect class="light" x="676" y="230" width="18" height="16"/><rect class="light" x="604" y="266" width="18" height="16"/>
+        <rect class="light" x="640" y="266" width="18" height="16"/><rect class="light" x="676" y="266" width="18" height="16"/>
+        <rect class="light" x="768" y="266" width="14" height="16"/><rect class="light" x="796" y="266" width="14" height="16"/>
+        <rect class="light" x="768" y="300" width="14" height="16"/><rect class="light" x="796" y="300" width="14" height="16"/>
+        <rect class="light" x="878" y="180" width="12" height="16"/><rect class="light" x="900" y="180" width="12" height="16"/>
+        <rect class="light" x="878" y="214" width="12" height="16"/><rect class="light" x="900" y="214" width="12" height="16"/>
+        <rect class="light" x="984" y="240" width="16" height="16"/><rect class="light" x="1016" y="240" width="16" height="16"/>
+        <rect class="light" x="1048" y="240" width="16" height="16"/><rect class="light" x="984" y="276" width="16" height="16"/>
+        <rect class="light" x="1016" y="276" width="16" height="16"/><rect class="light" x="1048" y="276" width="16" height="16"/>
+        <rect class="light" x="1140" y="220" width="14" height="16"/><rect class="light" x="1166" y="220" width="14" height="16"/>
+        <rect class="light" x="1140" y="256" width="14" height="16"/><rect class="light" x="1166" y="256" width="14" height="16"/>
+        <rect class="light" x="1248" y="260" width="18" height="16"/><rect class="light" x="1284" y="260" width="18" height="16"/>
+        <rect class="light" x="1320" y="260" width="18" height="16"/><rect class="light" x="1248" y="296" width="18" height="16"/>
+        <rect class="light" x="1284" y="296" width="18" height="16"/><rect class="light" x="1320" y="296" width="18" height="16"/>
+      </g>
+      <g class="canal">
+        <path d="M0 430 C220 400 320 460 560 430 C820 396 980 468 1440 420 L1440 520 L0 520 Z"/>
+        <path class="wave" d="M0 452 Q80 438 160 452 T320 452 T480 452 T640 452 T800 452 T960 452 T1120 452 T1280 452 T1440 452" fill="none" stroke="#bff6ff" stroke-width="4"/>
+      </g>
+      <g transform="translate(1040 168)">
+        <rect x="18" y="28" width="54" height="70" rx="8" fill="#1d6eb8" stroke="#9be7ff" stroke-width="3"/>
+        <rect class="mini-water" x="24" y="62" width="42" height="30" rx="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <section id="welcome-screen" class="welcome-screen" aria-label="NEXA STEM AI. Misi Selamatkan Kota Air">
+    <div class="welcome-frame">
+      <img class="welcome-bg" src="assets/welcome_bg.png" alt="">
+      <div class="welcome-nova" id="welcome-nova">
+        <img src="assets/ai_nova.png" alt="AI Nova" draggable="false">
+      </div>
+      <div class="welcome-actions">
+        <button type="button" id="open-ai-demo" class="welcome-btn welcome-btn-cuba" aria-label="Cuba AI Nova">
+          <img src="assets/btn_cuba_ai.png" alt="" draggable="false">
+        </button>
+        <button type="button" id="start-play" class="welcome-btn welcome-btn-mula" aria-label="Mula bermain">
+          <img src="assets/btn_mula.png" alt="" draggable="false">
+        </button>
+      </div>
+      <button type="button" class="narration-toggle" aria-pressed="false" aria-label="Senyapkan bacaan">🔊</button>
+      <div id="nova-editor" class="nova-editor" hidden role="region" aria-label="Editor posisi AI Nova">
+        <button type="button" id="nova-drag-toggle" aria-pressed="true">EDIT POSISI</button>
+        <label class="nova-size" for="nova-size">Saiz
+          <input id="nova-size" type="range" min="40" max="200" step="1" value="100">
+        </label>
+        <button type="button" id="nova-visibility" aria-pressed="true">Sembunyi</button>
+        <button type="button" id="nova-save">Simpan</button>
+        <button type="button" id="nova-reset">Set Semula</button>
+        <button type="button" id="nova-copy">Salin Tetapan</button>
+        <p id="nova-editor-note" class="nova-editor-note" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai-demo" class="welcome-screen" hidden aria-label="Cuba AI Nova">
+    <div class="welcome-frame" id="demo-frame">
+      <img class="welcome-bg" src="assets/cuba_ai_nova.png" alt="Cuba AI Nova. Tangki ada 120 mL. Sasaran 250 mL.">
+      <button type="button" id="demo-back" class="demo-hotspot" style="--x:3%;--y:1.4%;--w:12%;--h:7%" aria-label="Kembali"></button>
+      <button type="button" class="demo-hotspot" style="--x:8%;--y:75.2%;--w:27%;--h:10.3%" data-demo-answer="120" aria-label="Jawapan 120 mililiter"></button>
+      <button type="button" class="demo-hotspot" style="--x:35.5%;--y:75.2%;--w:28%;--h:10.3%" data-demo-answer="130" aria-label="Jawapan 130 mililiter"></button>
+      <button type="button" class="demo-hotspot" style="--x:65%;--y:75.2%;--w:27.5%;--h:10.3%" data-demo-answer="150" aria-label="Jawapan 150 mililiter"></button>
+      <button type="button" class="demo-hotspot" style="--x:6%;--y:87%;--w:29%;--h:10.5%" data-demo-help="dengar" aria-label="Dengar soalan"></button>
+      <button type="button" class="demo-hotspot" style="--x:65%;--y:87%;--w:30%;--h:10.5%" data-demo-help="ai" aria-label="Bantu AI"><span hidden>Bantuan guru</span></button>
+      <div id="demo-feedback" class="m1-feedback" hidden>
+        <img id="demo-feedback-art" alt="">
+      </div>
+      <div id="demo-dialog" class="help-dialog" hidden>
+        <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="demo-dialog-title">
+          <h2 id="demo-dialog-title">AI Nova</h2>
+          <p id="demo-dialog-text"></p>
+          <p id="demo-guide-note" class="guide-note" hidden></p>
+          <div id="demo-guide-taps" class="guide-taps" hidden></div>
+          <p id="demo-guide-ai" class="guide-ai" hidden></p>
+          <button type="button" id="demo-dialog-close">Cuba lagi</button>
+          <button type="button" id="demo-dialog-map" hidden>Peta Kota Air</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="app">
+    <section id="city-map" class="map-screen" hidden aria-label="Peta Kota Air">
+      <div class="map-frame" id="map-frame">
+        <img class="mission-art" src="assets/peta_kota_air.png" alt="Peta Kota Air dengan empat lokasi misi">
+        <button type="button" class="narration-toggle" aria-pressed="false" aria-label="Senyapkan bacaan">🔊</button>
+        <p id="map-speech" class="map-speech">Hai! Saya Cikgu Khaw. Selamat datang ke Bandar Air Nexa! Pilih misi yang bercahaya untuk memulakan pengembaraan STEM kamu!</p>
+        <p id="map-note" class="map-status" role="status"></p>
+        <div class="map-pin is-active" id="map-pin-one">
+          <img class="map-pin-art" src="assets/peta_kota_air_m1.png" alt="">
+          <button type="button" class="mission-card map-pin-hit" id="open-mission-one" style="--x:6.5%;--y:36%;--w:32%;--h:8%" aria-label="Misi 1 Makmal Ukur Air"></button>
+        </div>
+        <div class="map-pin is-locked" id="map-pin-two">
+          <img class="map-pin-art" src="assets/peta_kota_air_m2.png" alt="">
+          <button type="button" class="mission-card map-pin-hit" id="open-mission-two" style="--x:57.8%;--y:18.4%;--w:34%;--h:8.6%" aria-disabled="true" disabled aria-label="Misi 2 Gua Batu Misteri, berkunci">
+            <span class="map-lock" id="mission-two-lock" aria-hidden="true">🔒</span>
+          </button>
+          <div class="map-sign-edit" id="map-sign-2" style="--x:57.8%;--y:18.4%;--w:34%;--h:8.6%" hidden><span class="map-sign-resize"></span></div>
+        </div>
+        <div class="map-pin is-locked" id="map-pin-three">
+          <img class="map-pin-art" src="assets/peta_kota_air_m3.png" alt="">
+          <button type="button" class="mission-card map-pin-hit" id="open-mission-three" style="--x:3.5%;--y:70.4%;--w:33.8%;--h:9.5%" aria-disabled="true" disabled aria-label="Misi 3 Stesen Tangki Air, berkunci">
+            <span class="map-lock" id="mission-three-lock" aria-hidden="true">🔒</span>
+          </button>
+          <div class="map-sign-edit" id="map-sign-3" style="--x:3.5%;--y:70.4%;--w:33.8%;--h:9.5%" hidden><span class="map-sign-resize"></span></div>
+        </div>
+        <div class="map-pin is-locked" id="map-pin-four">
+          <img class="map-pin-art" src="assets/peta_kota_air_m4.png" alt="">
+          <button type="button" class="mission-card map-pin-hit" id="open-mission-four" style="--x:58.7%;--y:46.6%;--w:39.3%;--h:9.2%" aria-disabled="true" disabled aria-label="Misi 4 Bengkel Jurutera Muda, berkunci">
+            <span class="map-lock" id="mission-four-lock" aria-hidden="true">🔒</span>
+          </button>
+          <div class="map-sign-edit" id="map-sign-4" style="--x:58.7%;--y:46.6%;--w:39.3%;--h:9.2%" hidden><span class="map-sign-resize"></span></div>
+        </div>
+        <span class="map-tick" id="mission-badge" style="--x:37.1%;--y:41.1%;--w:5.5%;--h:4.2%" hidden><svg class="map-tick-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>
+        <span class="map-tick" id="mission-two-badge" style="--x:85.8%;--y:23.2%;--w:5.5%;--h:4.2%" hidden><svg class="map-tick-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>
+        <span class="map-tick" id="mission-three-badge" style="--x:30.9%;--y:72.4%;--w:5.5%;--h:4.2%" hidden><svg class="map-tick-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>
+        <span class="map-tick" id="mission-four-badge" style="--x:90.6%;--y:48.2%;--w:5.5%;--h:4.2%" hidden><svg class="map-tick-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>
+        <div class="map-sign-edit" id="map-tick-1" style="--x:37.1%;--y:41.1%;--w:5.5%;--h:4.2%" hidden><span class="map-sign-resize"></span></div>
+        <div class="map-sign-edit" id="map-tick-2" style="--x:85.8%;--y:23.2%;--w:5.5%;--h:4.2%" hidden><span class="map-sign-resize"></span></div>
+        <div class="map-sign-edit" id="map-tick-3" style="--x:30.9%;--y:72.4%;--w:5.5%;--h:4.2%" hidden><span class="map-sign-resize"></span></div>
+        <div class="map-sign-edit" id="map-tick-4" style="--x:90.6%;--y:48.2%;--w:5.5%;--h:4.2%" hidden><span class="map-sign-resize"></span></div>
+      </div>
+      <div id="map-sign-editor" class="m2-exp-editor" hidden>
+        <p id="map-sign-note">Seret papan tanda Misi 2, 3 atau 4, atau tanda siap Misi 1 hingga 4. Seret sudut kuning untuk ubah saiz. Kunci misi tidak berubah.</p>
+        <pre id="map-sign-readout"></pre>
+        <button type="button" id="map-sign-save">SIMPAN</button>
+        <button type="button" id="map-sign-copy">SALIN TETAPAN</button>
+        <button type="button" id="map-sign-close">TUTUP EDITOR</button>
+      </div>
+    </section>
+
+    <section id="mission-one" class="mission-screen" hidden>
+      <div class="mission-frame">
+        <img class="mission-art" id="m1-art" src="assets/screens/m1/m1_fikir.png" alt="Misi 1 Fikir. Tangki ada 120 mL. Sasaran 250 mL.">
+        <div class="m1-tank" id="m1-tank" hidden>
+          <div class="m1-water-box" id="m1-water-box">
+            <div class="m1-water-clip" id="m1-water-clip">
+              <div class="m1-water-fill" id="m1-water-fill">
+                <span class="m1-water-surface"></span>
+              </div>
+            </div>
+            <p class="m1-live-volume" id="m1-live-volume">120 mL</p>
+          </div>
+        </div>
+        <button type="button" class="m1-hotspot" id="back-to-map" style="--x:1.5%;--y:1%;--w:16%;--h:9%" aria-label="Kembali ke peta"></button>
+        <button type="button" class="m1-hotspot m1-fikir-only" data-m1-choice="130" style="--x:3.89%;--y:78.23%;--w:29.81%;--h:10.63%" aria-label="130 mililiter"></button>
+        <button type="button" class="m1-hotspot m1-fikir-only" data-m1-choice="150" style="--x:35.93%;--y:78.23%;--w:29.81%;--h:10.63%" aria-label="150 mililiter"></button>
+        <button type="button" class="m1-hotspot m1-fikir-only" data-m1-choice="120" style="--x:65.93%;--y:78.23%;--w:30.19%;--h:10.83%" aria-label="120 mililiter"></button>
+        <button type="button" class="m1-hotspot m1-fikir-only" id="m1-dengar" style="--x:4.4%;--y:89.2%;--w:29%;--h:7.6%" aria-label="Dengar soalan"></button>
+        <button type="button" class="m1-hotspot m1-fikir-only" id="m1-bantu" style="--x:67%;--y:89.2%;--w:29%;--h:7.6%" aria-label="Bantu AI"><span hidden>Bantuan guru</span></button>
+        <button type="button" class="m1-hotspot m1-exp-only" data-m1-pour="20" style="--x:5.5%;--y:62.2%;--w:27.5%;--h:16.2%" hidden aria-label="Tuang 20 mililiter"></button>
+        <button type="button" class="m1-hotspot m1-exp-only" data-m1-pour="50" style="--x:36.2%;--y:62.2%;--w:27.5%;--h:16.2%" hidden aria-label="Tuang 50 mililiter"></button>
+        <button type="button" class="m1-hotspot m1-exp-only" data-m1-pour="80" style="--x:67%;--y:62.2%;--w:27.5%;--h:16.2%" hidden aria-label="Tuang 80 mililiter"></button>
+        <button type="button" class="m1-hotspot m1-exp-only" id="m1-exp-reset" style="--x:23%;--y:81.4%;--w:54%;--h:6%" hidden aria-label="Set semula tangki kepada 120 mililiter"></button>
+        <button type="button" class="m1-hotspot m1-exp-only" id="m1-exp-dengar" style="--x:3.6%;--y:88.6%;--w:29.4%;--h:7.5%" hidden aria-label="Dengar arahan eksperimen"></button>
+        <button type="button" class="m1-hotspot m1-exp-only" id="m1-exp-bantu" style="--x:66.6%;--y:88.6%;--w:29.6%;--h:7.5%" hidden aria-label="Bantu AI"><span hidden>Bantuan guru</span></button>
+        <button type="button" class="m1-hotspot m1-bukti-only m1-proof-hotspot" id="m1-proof-1" data-m1-proof="120+50=170" style="--x:4.5%;--y:70.9%;--w:91%;--h:5%" hidden aria-label="120 mililiter campur 50 mililiter sama dengan 170 mililiter"><span class="m1-proof-label">JAWAPAN 1</span><i class="m1-proof-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m1-bukti-only m1-proof-hotspot" id="m1-proof-2" data-m1-proof="120+80=200" style="--x:4.5%;--y:77.3%;--w:91%;--h:5%" hidden aria-label="120 mililiter campur 80 mililiter sama dengan 200 mililiter"><span class="m1-proof-label">JAWAPAN 2</span><i class="m1-proof-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m1-bukti-only m1-proof-hotspot" id="m1-proof-3" data-m1-proof="120+130=250" style="--x:4.5%;--y:83.1%;--w:91%;--h:5%" hidden aria-label="120 mililiter campur 130 mililiter sama dengan 250 mililiter"><span class="m1-proof-label">JAWAPAN 3</span><i class="m1-proof-handle" aria-hidden="true"></i></button>
+        <div id="m1-proof-editor" class="m1-proof-editor" hidden>
+          <p id="m1-proof-note">Seret kotak atau sudut kuning.</p>
+          <fieldset>
+            <legend>JAWAPAN 1</legend>
+            <label>left <input id="m1-proof-1-left" type="number" min="0" max="100" step="0.1"></label>
+            <label>top <input id="m1-proof-1-top" type="number" min="0" max="100" step="0.1"></label>
+            <label>width <input id="m1-proof-1-width" type="number" min="8" max="100" step="0.1"></label>
+            <label>height <input id="m1-proof-1-height" type="number" min="3" max="40" step="0.1"></label>
+          </fieldset>
+          <fieldset>
+            <legend>JAWAPAN 2</legend>
+            <label>left <input id="m1-proof-2-left" type="number" min="0" max="100" step="0.1"></label>
+            <label>top <input id="m1-proof-2-top" type="number" min="0" max="100" step="0.1"></label>
+            <label>width <input id="m1-proof-2-width" type="number" min="8" max="100" step="0.1"></label>
+            <label>height <input id="m1-proof-2-height" type="number" min="3" max="40" step="0.1"></label>
+          </fieldset>
+          <fieldset>
+            <legend>JAWAPAN 3</legend>
+            <label>left <input id="m1-proof-3-left" type="number" min="0" max="100" step="0.1"></label>
+            <label>top <input id="m1-proof-3-top" type="number" min="0" max="100" step="0.1"></label>
+            <label>width <input id="m1-proof-3-width" type="number" min="8" max="100" step="0.1"></label>
+            <label>height <input id="m1-proof-3-height" type="number" min="3" max="40" step="0.1"></label>
+          </fieldset>
+          <pre id="m1-proof-readout"></pre>
+          <button type="button" id="m1-proof-save">SIMPAN</button>
+          <button type="button" id="m1-proof-reset">SET SEMULA</button>
+          <button type="button" id="m1-proof-copy">SALIN TETAPAN</button>
+          <button type="button" id="m1-proof-close">TUTUP EDITOR</button>
+        </div>
+        <button type="button" class="m1-hotspot m1-bukti-only" id="m1-bukti-dengar" style="--x:3.6%;--y:88.6%;--w:29.4%;--h:7.5%" hidden aria-label="Dengar soalan buktikan"></button>
+        <button type="button" class="m1-hotspot m1-bukti-only" id="m1-bukti-bantu" style="--x:66.6%;--y:88.6%;--w:29.6%;--h:7.5%" hidden aria-label="Bantu AI"><span hidden>Bantuan guru</span></button>
+        <div id="m1-feedback" class="m1-feedback" hidden>
+          <img id="m1-feedback-art" alt="">
+        </div>
+        <div id="m1-reward" class="m1-reward" hidden>
+          <img class="m1-reward-art" src="assets/screens/rewards/misi_selesai.png" alt="Tahniah! Misi selesai. Anda telah memperolehi lencana baharu.">
+          <div id="m1-reward-badge" class="m1-reward-badge">
+            <img id="reward-badge-1" src="assets/badges/m1_badge.png" alt="Lencana Misi 1">
+            <img id="reward-badge-2" src="assets/badges/m2_badge.png" alt="Lencana Misi 2" hidden>
+            <img id="reward-badge-3" src="assets/badges/m3_badge.png" alt="Lencana Misi 3" hidden>
+            <img id="reward-badge-4" src="assets/badges/m4_badge.png" alt="Lencana Misi 4" hidden>
+          </div>
+          <button type="button" class="m1-hotspot" id="m1-reward-next" style="--x:4%;--y:84.6%;--w:46%;--h:8.2%" aria-label="Misi seterusnya"></button>
+          <button type="button" class="m1-hotspot" id="m1-reward-map" style="--x:52%;--y:84.6%;--w:44%;--h:8.2%" aria-label="Kembali ke peta"></button>
+        </div>
+        <div id="m1-dialog" class="help-dialog" hidden>
+          <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="m1-dialog-title">
+            <h2 id="m1-dialog-title">AI Nova</h2>
+            <p id="m1-dialog-text"></p>
+            <p id="m1-guide-note" class="guide-note" hidden></p>
+            <div id="m1-guide-taps" class="guide-taps" hidden></div>
+            <p id="m1-guide-ai" class="guide-ai" hidden></p>
+            <button type="button" id="m1-dialog-close">Cuba lagi</button>
+            <button type="button" id="m1-dialog-next" hidden>Teruskan ke Eksperimen</button>
+          </div>
+        </div>
+        <div class="mission-sheet" id="m1-sheet" hidden>
+          <div class="mission-help" data-bukti-tunjuk="Tambah 140 mL dengan 50 mL. Jangan teka. Ini petunjuk visual, bukan AI.">
+            <button type="button" data-help="dengar">DENGAR</button>
+            <button type="button" data-help="ai" aria-label="Bantu AI">BANTU AI</button>
+          </div>
+    <header class="header">
+      <p class="eyebrow">Permainan ukuran air</p>
+      <h1>NEXA STEM AI</h1>
+      <p class="lead">Misi: selamatkan bekalan air Bandar Air Nexa. Isi tangki daripada 120 mL hingga tepat 250 mL.</p>
+    </header>
+
+    <section class="story card" aria-label="Cerita misi">
+      <div class="nova" id="nova">
+        <div class="nova-figure">
+          <svg class="nova-art" viewBox="0 0 180 200" aria-hidden="true">
+            <g class="nova-antenna">
+              <rect x="86" y="20" width="8" height="20" rx="4" fill="#7ee0ff"/>
+              <circle class="nova-bulb" cx="90" cy="14" r="9" fill="#ffe56a" stroke="#1a6ea8" stroke-width="3"/>
+            </g>
+            <rect x="46" y="38" width="88" height="74" rx="34" fill="#f7fcff" stroke="#1a6ea8" stroke-width="4"/>
+            <g class="nova-eyes">
+              <circle cx="74" cy="72" r="9" fill="#14324a"/>
+              <circle cx="108" cy="72" r="9" fill="#14324a"/>
+              <circle cx="77" cy="69" r="3" fill="#ffffff"/>
+              <circle cx="111" cy="69" r="3" fill="#ffffff"/>
+            </g>
+            <path d="M72 92 Q90 106 108 92" fill="none" stroke="#14324a" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="60" cy="86" r="5" fill="#ffb4c8"/>
+            <circle cx="120" cy="86" r="5" fill="#ffb4c8"/>
+            <rect x="60" y="116" width="60" height="54" rx="20" fill="#2f9bff" stroke="#1a6ea8" stroke-width="4"/>
+            <rect x="76" y="130" width="28" height="16" rx="6" fill="#e7f8ff"/>
+            <rect x="24" y="126" width="34" height="14" rx="7" fill="#f7fcff" stroke="#1a6ea8" stroke-width="3"/>
+            <g class="nova-arm">
+              <rect x="120" y="122" width="34" height="14" rx="7" fill="#f7fcff" stroke="#1a6ea8" stroke-width="3"/>
+              <circle cx="156" cy="129" r="8" fill="#ffe56a" stroke="#1a6ea8" stroke-width="3"/>
+            </g>
+            <ellipse cx="78" cy="176" rx="12" ry="7" fill="#1a6ea8"/>
+            <ellipse cx="104" cy="176" rx="12" ry="7" fill="#1a6ea8"/>
+          </svg>
+        </div>
+        <p class="nova-name">Cikgu Nova</p>
+        <p class="nova-note">Panduan animasi</p>
+      </div>
+      <div class="story-copy">
+        <h2>Selamatkan bekalan air bandar</h2>
+        <p>Bandar Air Nexa sedang kekurangan air. Tangki bandar hanya tinggal 120 mL. Penduduk perlukan 250 mL supaya air dapat mengalir semula.</p>
+        <p class="speech" id="nova-speech">Hai! Saya Cikgu Nova. Kita kira dahulu, kemudian buat eksperimen.</p>
+        <ol class="steps">
+          <li>Fikir: kira 250 mL − 120 mL.</li>
+          <li>Eksperimen: pilih bekas dan tekan Tuang Air.</li>
+          <li>Baca skala dengan mata selari dengan air.</li>
+          <li>Buktikan: jawab satu soalan baharu tanpa petunjuk.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="learn card" id="learning" aria-label="Tiga peringkat misi">
+      <ol class="phases">
+        <li class="phase is-active" id="phase-fikir">1. Fikir</li>
+        <li class="phase is-locked" id="phase-eksperimen">2. Eksperimen</li>
+        <li class="phase is-locked" id="phase-buktikan">3. Buktikan</li>
+      </ol>
+
+      <div id="fikir-panel">
+        <h2>Fikir</h2>
+        <p data-speak="Tangki ada seratus dua puluh mililiter. Sasaran dua ratus lima puluh mililiter. Berapa mililiter lagi diperlukan?">Tangki ada 120 mL. Sasaran ialah 250 mL. Berapa mililiter air lagi diperlukan?</p>
+        <p class="equation">250 mL − 120 mL = ?</p>
+        <form class="answer-form" id="fikir-form">
+          <label for="fikir-input">Jawapan kamu</label>
+          <input id="fikir-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="mL">
+          <button type="submit" class="action check" id="fikir-check">Semak</button>
+          <button type="button" class="action hint-button" id="hint-button">Petunjuk</button>
+        </form>
+        <p id="fikir-feedback" class="feedback"></p>
+        <p id="fikir-hint" class="hint" hidden>Petunjuk: buat tolak. 250 − 100 = 150. Kemudian 150 − 20. Jawapan dalam mL.</p>
+      </div>
+
+      <div id="eksperimen-note" hidden>
+        <h2>Eksperimen</h2>
+        <p id="eksperimen-status" data-speak="Isi tangki hingga tepat 250 mililiter. Pilih bekas, kemudian tekan Tuang Air.">Kamu perlukan 130 mL lagi. Pilih bekas 20 mL, 50 mL atau 80 mL, kemudian tekan Tuang Air.</p>
+        <p>Perhatikan skala tangki. Letakkan mata selari dengan permukaan air. Jangan lihat dari atas atau dari bawah. Baca pada bahagian bawah lengkung air. Lihat gambar “Cara membaca aras air”.</p>
+      </div>
+
+      <div id="bukti-panel" hidden>
+        <h2>Buktikan</h2>
+        <p>Jawab soalan ini sendiri. Tiada petunjuk untuk soalan ini.</p>
+        <p class="equation" data-speak="Sebuah botol ada 140 mililiter air. Siti menambah 50 mililiter lagi. Berapakah isi padu air sekarang?">Sebuah botol ada 140 mL air. Siti menambah 50 mL lagi. Berapakah isi padu air sekarang?</p>
+        <form class="answer-form" id="bukti-form">
+          <label for="bukti-input">Jawapan kamu</label>
+          <input id="bukti-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="mL">
+          <button type="submit" class="action check" id="bukti-check">Semak</button>
+        </form>
+        <p id="bukti-feedback" class="feedback"></p>
+      </div>
+
+      <div class="record" aria-live="polite">
+        <h2>Rekod sesi</h2>
+        <p class="scores">
+          <span class="score ok">Betul: <strong id="correct-count">0</strong></span>
+          <span class="score bad">Salah: <strong id="incorrect-count">0</strong></span>
+        </p>
+        <ul id="attempt-log">
+          <li class="log-empty">Belum ada cubaan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <details class="guide card" id="guide" open>
+      <summary>Cara membaca aras air</summary>
+      <p class="guide-lead">Letakkan mata selari dengan permukaan air. Air melengkung. Baca pada bahagian bawah lengkung itu.</p>
+      <div class="guide-grid">
+        <figure class="lesson bad">
+          <svg viewBox="0 0 160 150" aria-hidden="true">
+            <rect x="58" y="36" width="44" height="96" rx="10" fill="#e7f6ff" stroke="#1a6ea8" stroke-width="3"/>
+            <rect x="62" y="84" width="36" height="44" fill="#1c8fe8"/>
+            <ellipse cx="80" cy="84" rx="18" ry="5" fill="#d9f6ff"/>
+            <g transform="translate(78 8)">
+              <circle cx="16" cy="12" r="10" fill="#ffe0b5" stroke="#14324a" stroke-width="2"/>
+              <circle cx="16" cy="12" r="3" fill="#14324a"/>
+            </g>
+            <path d="M94 18 L94 70" fill="none" stroke="#d14343" stroke-width="3" stroke-dasharray="4 4"/>
+          </svg>
+          <figcaption><strong>Salah.</strong> Jangan lihat dari atas.</figcaption>
+        </figure>
+        <figure class="lesson good">
+          <svg viewBox="0 0 160 150" aria-hidden="true">
+            <rect x="58" y="28" width="44" height="96" rx="10" fill="#e7f6ff" stroke="#1a6ea8" stroke-width="3"/>
+            <rect x="62" y="76" width="36" height="44" fill="#1c8fe8"/>
+            <ellipse cx="80" cy="76" rx="18" ry="5" fill="#d9f6ff"/>
+            <path d="M8 76 H150" fill="none" stroke="#128a45" stroke-width="3" stroke-dasharray="5 4"/>
+            <g transform="translate(4 64)">
+              <circle cx="16" cy="12" r="10" fill="#ffe0b5" stroke="#14324a" stroke-width="2"/>
+              <circle cx="19" cy="12" r="3" fill="#14324a"/>
+            </g>
+            <text x="96" y="70" fill="#128a45" font-size="11" font-family="Segoe UI, Trebuchet MS, sans-serif" font-weight="700">Aras mata</text>
+          </svg>
+          <figcaption><strong>Betul.</strong> Mata selari dengan air.</figcaption>
+        </figure>
+        <figure class="lesson bad">
+          <svg viewBox="0 0 160 150" aria-hidden="true">
+            <rect x="58" y="18" width="44" height="96" rx="10" fill="#e7f6ff" stroke="#1a6ea8" stroke-width="3"/>
+            <rect x="62" y="66" width="36" height="44" fill="#1c8fe8"/>
+            <ellipse cx="80" cy="66" rx="18" ry="5" fill="#d9f6ff"/>
+            <g transform="translate(78 118)">
+              <circle cx="16" cy="12" r="10" fill="#ffe0b5" stroke="#14324a" stroke-width="2"/>
+              <circle cx="16" cy="10" r="3" fill="#14324a"/>
+            </g>
+            <path d="M94 128 L94 78" fill="none" stroke="#d14343" stroke-width="3" stroke-dasharray="4 4"/>
+          </svg>
+          <figcaption><strong>Salah.</strong> Jangan lihat dari bawah.</figcaption>
+        </figure>
+      </div>
+    </details>
+
+    <section class="stage" aria-label="Tangki air">
+      <div class="tank-card">
+        <div class="gauge">
+          <div class="cylinder" id="cylinder">
+            <div class="stream" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="water" id="water">
+              <span class="bubble"></span>
+              <span class="bubble"></span>
+              <span class="bubble"></span>
+            </div>
+          </div>
+          <div class="scale" id="scale" aria-hidden="true"></div>
+        </div>
+        <p class="reading">
+          Isi padu sekarang:
+          <strong id="volume-text">120 mL</strong>
+        </p>
+      </div>
+
+      <div class="controls">
+        <p class="target">Sasaran: <strong>250 mL</strong></p>
+
+        <p class="choose" id="choose-label">Pilih bekas</p>
+        <div class="containers" role="group" aria-labelledby="choose-label">
+          <button type="button" class="beaker" data-amount="20" aria-pressed="false">
+            <span class="beaker-body"><span class="beaker-fill"></span></span>
+            <span class="beaker-label">20 mL</span>
+          </button>
+          <button type="button" class="beaker" data-amount="50" aria-pressed="false">
+            <span class="beaker-body"><span class="beaker-fill"></span></span>
+            <span class="beaker-label">50 mL</span>
+          </button>
+          <button type="button" class="beaker" data-amount="80" aria-pressed="false">
+            <span class="beaker-body"><span class="beaker-fill"></span></span>
+            <span class="beaker-label">80 mL</span>
+          </button>
+        </div>
+
+        <button type="button" class="action pour" id="pour-button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>
+          Tuang Air
+        </button>
+        <button type="button" class="action reset" id="reset-button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7L15 9h7V2l-2.2 2.2A10 10 0 1 0 22 12h-2z"/></svg>
+          Set Semula
+        </button>
+
+        <p id="message" class="message" role="status">Kira dahulu: 250 mL − 120 mL.</p>
+      </div>
+    </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission-two" class="mission-screen" hidden>
+      <div class="mission-frame" id="m2-frame">
+        <img class="mission-art" id="m2-art" src="assets/screens/m2/m2_fikir.png" alt="Misi 2 Fikir. Paras air naik daripada 120 mL kepada 165 mL. Berapakah isipadu batu kristal?">
+        <button type="button" class="m1-hotspot" id="m2-back" style="--x:1.5%;--y:1%;--w:16%;--h:8%" aria-label="Kembali ke peta"></button>
+        <button type="button" class="m1-hotspot" id="m2-choice-35" data-m2-choice="35" style="--x:4.5%;--y:77.5%;--w:29.6%;--h:9.2%" aria-label="35 mililiter"></button>
+        <button type="button" class="m1-hotspot" id="m2-choice-45" data-m2-choice="45" style="--x:35.2%;--y:77.7%;--w:29.6%;--h:9.2%" aria-label="45 mililiter"></button>
+        <button type="button" class="m1-hotspot" id="m2-choice-55" data-m2-choice="55" style="--x:66.9%;--y:76.8%;--w:29.6%;--h:9.2%" aria-label="55 mililiter"></button>
+        <button type="button" class="m1-hotspot" id="m2-dengar" style="--x:2.8%;--y:87.9%;--w:32.7%;--h:8.9%" aria-label="Dengar soalan"></button>
+        <button type="button" class="m1-hotspot" id="m2-bantu" style="--x:63.6%;--y:87.5%;--w:33.5%;--h:7.7%" aria-label="Bantu AI"></button>
+        <div id="m2-exp-layer" hidden>
+          <div id="m2-exp-water" class="m2-exp-water">
+            <div id="m2-exp-clip" class="m2-exp-clip">
+              <div class="m2-exp-glass" aria-hidden="true"></div>
+              <div id="m2-exp-fill" class="m2-exp-fill"><i class="m2-exp-surface" aria-hidden="true"></i></div>
+            </div>
+            <p id="m2-exp-level" class="m2-exp-level">120 mL</p>
+            <i id="m2-exp-water-handle" class="m2-exp-handle" aria-hidden="true"></i>
+          </div>
+          <div id="m2-exp-crystal" class="m2-exp-crystal" hidden></div>
+          <div id="m2-exp-crystal-entry" class="m2-exp-crystal is-entry"></div>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-stone-20" data-m2-stone="20" style="--x:4%;--y:63%;--w:30%;--h:16%" aria-label="Batu 20 mililiter"><span class="m2-exp-label">20 mL</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-stone-45" data-m2-stone="45" style="--x:35%;--y:63%;--w:30%;--h:16%" aria-label="Batu 45 mililiter"><span class="m2-exp-label">45 mL</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-stone-60" data-m2-stone="60" style="--x:66%;--y:63%;--w:30%;--h:16%" aria-label="Batu 60 mililiter"><span class="m2-exp-label">60 mL</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-exp-reset" style="--x:27%;--y:81.2%;--w:46%;--h:6.2%" aria-label="Set semula"><span class="m2-exp-label">Set semula</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-exp-dengar" style="--x:2.5%;--y:88.2%;--w:45%;--h:7.2%" aria-label="Dengar arahan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-exp-bantu" style="--x:52.5%;--y:88.2%;--w:45%;--h:7.2%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu AI</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        </div>
+        <div id="m2-proof-layer" hidden>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-proof-sum" data-m2-proof="120+45=165" style="--x:5.1%;--y:71.2%;--w:88.6%;--h:5.2%" aria-label="120 mililiter campur 45 mililiter sama dengan 165 mililiter"><span class="m2-exp-label">120 + 45 = 165</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-proof-low" data-m2-proof="120+20=140" style="--x:5.3%;--y:77.2%;--w:88.6%;--h:5.4%" aria-label="120 mililiter campur 20 mililiter sama dengan 140 mililiter"><span class="m2-exp-label">120 + 20 = 140</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-proof-high" data-m2-proof="120+60=180" style="--x:5.1%;--y:83%;--w:89.5%;--h:5.6%" aria-label="120 mililiter campur 60 mililiter sama dengan 180 mililiter"><span class="m2-exp-label">120 + 60 = 180</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-proof-dengar" style="--x:3.4%;--y:90%;--w:31.2%;--h:6.5%" aria-label="Dengar soalan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m2-proof-bantu" style="--x:65.7%;--y:90.3%;--w:31%;--h:6.2%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu AI</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        </div>
+        <div id="m2-reward" class="m1-reward" hidden>
+          <img class="m1-reward-art" src="assets/screens/rewards/misi_selesai.png" alt="Tahniah! Misi selesai. Anda telah memperolehi lencana baharu.">
+          <div class="m1-reward-badge">
+            <img src="assets/badges/m2_badge.png" alt="Lencana Misi 2">
+          </div>
+          <button type="button" class="m1-hotspot" id="m2-reward-next" style="--x:4%;--y:84.6%;--w:46%;--h:8.2%" aria-label="Misi seterusnya"></button>
+          <button type="button" class="m1-hotspot" id="m2-reward-map" style="--x:52%;--y:84.6%;--w:44%;--h:8.2%" aria-label="Kembali ke peta"></button>
+        </div>
+        <div id="m2-feedback" class="m1-feedback" hidden>
+          <img id="m2-feedback-art" alt="">
+        </div>
+        <div id="m2-dialog" class="help-dialog" hidden>
+          <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="m2-dialog-title">
+            <h2 id="m2-dialog-title">AI NOVA</h2>
+            <p id="m2-dialog-text"></p>
+            <p id="m2-guide-note" class="guide-note" hidden></p>
+            <div id="m2-guide-taps" class="guide-taps" hidden></div>
+            <p id="m2-guide-ai" class="guide-ai" hidden></p>
+            <button type="button" id="m2-dialog-close">Tutup</button>
+          </div>
+        </div>
+        <div class="mission-sheet" hidden>
+          <div class="mission-help" data-bukti-tunjuk="Tolak aras mula daripada aras akhir. Ini petunjuk visual, bukan AI.">
+            <button type="button" data-help="dengar">DENGAR</button>
+            <button type="button" data-help="ai" aria-label="Bantu AI">BANTU AI</button>
+          </div>
+      <button type="button" class="action map-back" id="back-to-map-two">Kembali ke Peta</button>
+      <header class="header">
+        <p class="eyebrow">Misi 2</p>
+        <h1>Batu Misteri</h1>
+        <p class="lead">Masukkan batu ke dalam air. Baca aras air dan cari isi padu batu.</p>
+      </header>
+
+      <section class="learn card" aria-label="Peringkat Batu Misteri">
+        <ol class="phases">
+          <li class="phase is-active" id="m2-phase-fikir">1. Fikir</li>
+          <li class="phase is-locked" id="m2-phase-eksperimen">2. Eksperimen</li>
+          <li class="phase is-locked" id="m2-phase-buktikan">3. Buktikan</li>
+        </ol>
+
+        <div id="m2-fikir-panel">
+          <h2>Fikir</h2>
+          <p data-speak="Sebiji batu dimasukkan ke dalam air hingga tenggelam. Apakah yang berlaku kepada aras air?">Sebiji batu dimasukkan ke dalam air hingga tenggelam. Apakah yang berlaku kepada aras air?</p>
+          <div class="choice-row" role="group" aria-label="Ramalan aras air">
+            <button type="button" class="predict" data-predict="naik">Naik</button>
+            <button type="button" class="predict" data-predict="turun">Turun</button>
+            <button type="button" class="predict" data-predict="sama">Tidak berubah</button>
+          </div>
+          <button type="button" class="action hint-button" id="m2-hint-button">Petunjuk</button>
+          <p id="m2-fikir-feedback" class="feedback"></p>
+          <p id="m2-fikir-hint" class="hint" hidden>Petunjuk: batu mengambil ruang di dalam air. Air terpaksa bergerak ke atas.</p>
+        </div>
+
+        <div id="m2-eksperimen-note" hidden>
+          <h2>Eksperimen</h2>
+          <p id="m2-eksperimen-status" data-speak="Silinder ada 120 mililiter air. Masukkan batu, kemudian kira isi padu batu.">Silinder ada 120 mL air. Tekan batu, atau seret batu ke dalam silinder.</p>
+          <p>Baca skala pada aras mata. Air yang naik sama dengan isi padu batu. 1 mL air tersesar = 1 cm³.</p>
+        </div>
+
+        <div id="m2-calc-panel" hidden>
+          <p class="equation">165 mL − 120 mL = ?</p>
+          <form class="answer-form" id="m2-calc-form">
+            <label for="m2-calc-input">Isi padu batu (cm³)</label>
+            <input id="m2-calc-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="cm³">
+            <button type="submit" class="action check">Semak</button>
+            <button type="button" class="action hint-button" id="m2-calc-hint-button">Petunjuk</button>
+          </form>
+          <p id="m2-calc-feedback" class="feedback"></p>
+          <p id="m2-calc-hint" class="hint" hidden>Petunjuk: tolak aras mula daripada aras akhir. 165 − 120. Jawapan dalam cm³.</p>
+        </div>
+
+        <div id="m2-bukti-panel" hidden>
+          <h2>Buktikan</h2>
+          <p>Jawab soalan ini sendiri. Tiada petunjuk untuk soalan ini.</p>
+          <p class="equation" data-speak="Aras mula 100 mililiter. Aras akhir 130 mililiter. Berapakah isi padu batu?">Aras mula 100 mL. Aras akhir 130 mL. Berapakah isi padu batu?</p>
+          <form class="answer-form" id="m2-bukti-form">
+            <label for="m2-bukti-input">Isi padu batu (cm³)</label>
+            <input id="m2-bukti-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="cm³">
+            <button type="submit" class="action check">Semak</button>
+          </form>
+          <p id="m2-bukti-feedback" class="feedback"></p>
+        </div>
+
+        <div class="record" aria-live="polite">
+          <h2>Rekod sesi</h2>
+          <p class="scores">
+            <span class="score ok">Betul: <strong id="m2-correct-count">0</strong></span>
+            <span class="score bad">Salah: <strong id="m2-incorrect-count">0</strong></span>
+          </p>
+          <ul id="m2-attempt-log">
+            <li class="log-empty">Belum ada cubaan.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="stage" aria-label="Silinder penyukat">
+        <div class="tank-card">
+          <div class="m2-gauge">
+            <div class="m2-cylinder" id="m2-cylinder">
+              <div class="m2-stone-in" id="m2-stone-in" aria-hidden="true">
+                <svg viewBox="0 0 70 48"><path d="M8 34 L20 12 L38 22 L58 8 L64 36 Z" fill="#c9843a"/><circle cx="30" cy="24" r="5" fill="#ffe56a"/></svg>
+              </div>
+              <div class="m2-water" id="m2-water"></div>
+            </div>
+            <div class="m2-scale" id="m2-scale" aria-hidden="true"></div>
+          </div>
+          <p class="reading">Aras air: <strong id="m2-volume-text">120 mL</strong></p>
+        </div>
+        <div class="controls">
+          <button type="button" class="stone" id="m2-stone">
+            <svg viewBox="0 0 70 48" aria-hidden="true"><path d="M8 34 L20 12 L38 22 L58 8 L64 36 Z" fill="#c9843a"/><circle cx="30" cy="24" r="5" fill="#ffe56a"/></svg>
+            <span>Tekan atau seret batu ke dalam air</span>
+          </button>
+          <button type="button" class="action reset" id="m2-reset">Set Semula</button>
+          <p id="m2-message" class="message" role="status">Ramalkan dahulu: aras air naik, turun, atau tidak berubah?</p>
+        </div>
+      </section>
+        </div>
+      </div>
+      <div id="m2-exp-editor" class="m2-exp-editor" hidden>
+        <button type="button" id="m2-exp-collapse">Sembunyi panel</button>
+        <p id="m2-exp-note">Seret kotak atau sudut kuning. Jawapan tidak dihantar semasa menyunting.</p>
+        <div id="m2-exp-fields"></div>
+        <pre id="m2-exp-readout"></pre>
+        <button type="button" id="m2-exp-save">SIMPAN</button>
+        <button type="button" id="m2-exp-layout-reset">SET SEMULA</button>
+        <button type="button" id="m2-exp-copy">SALIN TETAPAN</button>
+        <button type="button" id="m2-exp-close">TUTUP EDITOR</button>
+      </div>
+      <div id="m2-proof-editor" class="m2-exp-editor" hidden>
+        <p id="m2-proof-note">Seret kotak jawapan. Jawapan tidak dihantar semasa menyunting.</p>
+        <div id="m2-proof-fields"></div>
+        <pre id="m2-proof-readout"></pre>
+        <button type="button" id="m2-proof-save">SIMPAN</button>
+        <button type="button" id="m2-proof-layout-reset">SET SEMULA</button>
+        <button type="button" id="m2-proof-copy">SALIN TETAPAN</button>
+        <button type="button" id="m2-proof-close">TUTUP EDITOR</button>
+      </div>
+    </section>
+
+    <section id="mission-three" class="mission-screen" hidden>
+      <div class="mission-frame" id="m3-frame">
+        <img class="mission-art" id="m3-art" src="assets/screens/m3/m3_fikir.png" alt="Misi 3 Fikir. Tangki ada 700 mL dan bocor 100 mL. Berapakah baki air?">
+        <button type="button" class="m1-hotspot" id="m3-picture-back" style="--x:1.5%;--y:1%;--w:16%;--h:8%" aria-label="Kembali ke peta"></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m3-fikir-only" id="m3-choice-500" data-m3-choice="500" data-cal="m3f500" style="--x:4%;--y:77.4%;--w:29%;--h:8.7%" aria-label="500 mililiter"><span class="m2-exp-label">500</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m3-fikir-only" id="m3-choice-700" data-m3-choice="700" data-cal="m3f700" style="--x:36%;--y:77.4%;--w:29%;--h:8.7%" aria-label="700 mililiter"><span class="m2-exp-label">700</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m3-fikir-only" id="m3-choice-600" data-m3-choice="600" data-cal="m3f600" style="--x:67%;--y:77.4%;--w:32%;--h:8.7%" aria-label="600 mililiter"><span class="m2-exp-label">600</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m3-fikir-only" id="m3-fikir-dengar" data-cal="m3fd" style="--x:3%;--y:88.5%;--w:32%;--h:6%" aria-label="Dengar soalan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m3-fikir-only" id="m3-fikir-bantu" data-cal="m3fb" style="--x:66%;--y:88%;--w:30%;--h:6.5%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <div id="m3-exp-layer" hidden>
+          <div id="m3-exp-water" class="m2-exp-water" data-cal="m3water">
+            <div id="m3-exp-clip" class="m2-exp-clip">
+              <div id="m3-exp-fill" class="m2-exp-fill"><i class="m2-exp-surface" aria-hidden="true"></i></div>
+            </div>
+            <p id="m3-exp-level" class="m2-exp-level">600 mL</p>
+            <i class="m2-exp-handle" aria-hidden="true"></i>
+          </div>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-pour-100" data-m3-pour="100" data-cal="m3p100" style="--x:9.5%;--y:65.8%;--w:23.4%;--h:13.9%" aria-label="Tuang 100 mililiter"><span class="m2-exp-label">100</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-pour-200" data-m3-pour="200" data-cal="m3p200" style="--x:39%;--y:65.4%;--w:22%;--h:13.9%" aria-label="Tuang 200 mililiter"><span class="m2-exp-label">200</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-pour-400" data-m3-pour="400" data-cal="m3p400" style="--x:68.4%;--y:65.7%;--w:25.5%;--h:13.8%" aria-label="Tuang 400 mililiter"><span class="m2-exp-label">400</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-exp-reset" data-cal="m3reset" style="--x:28.9%;--y:84.2%;--w:44.5%;--h:6.3%" aria-label="Set semula"><span class="m2-exp-label">Set semula</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-exp-dengar" data-cal="m3ed" style="--x:3.8%;--y:91%;--w:32%;--h:6%" aria-label="Dengar arahan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-exp-bantu" data-cal="m3eb" style="--x:67.2%;--y:91%;--w:30%;--h:6%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        </div>
+        <div id="m3-proof-layer" hidden>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-proof-low" data-m3-proof="600+200=800" data-cal="m3low" style="--x:5%;--y:72.1%;--w:90%;--h:5.2%" aria-label="600 campur 200 sama dengan 800"><span class="m2-exp-label">600+200=800</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-proof-sum" data-m3-proof="600+400=1000" data-cal="m3sum" style="--x:5%;--y:77.8%;--w:90%;--h:4.8%" aria-label="600 campur 400 sama dengan 1000"><span class="m2-exp-label">600+400=1000</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-proof-high" data-m3-proof="700+400=1100" data-cal="m3high" style="--x:5%;--y:83.5%;--w:90%;--h:4.8%" aria-label="700 campur 400 sama dengan 1100"><span class="m2-exp-label">700+400=1100</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-proof-dengar" data-cal="m3pd" style="--x:3%;--y:89.5%;--w:32%;--h:5.5%" aria-label="Dengar soalan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m3-proof-bantu" data-cal="m3pb" style="--x:66%;--y:89.5%;--w:30%;--h:5.5%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        </div>
+        <div id="m3-reward" class="m1-reward" hidden>
+          <img class="m1-reward-art" src="assets/screens/rewards/misi_selesai.png" alt="Tahniah! Misi selesai. Anda telah memperolehi lencana baharu.">
+          <div class="m1-reward-badge"><img src="assets/badges/m3_badge.png" alt="Lencana Misi 3"></div>
+          <button type="button" class="m1-hotspot" id="m3-reward-next" style="--x:4%;--y:84.6%;--w:46%;--h:8.2%" aria-label="Misi seterusnya"></button>
+          <button type="button" class="m1-hotspot" id="m3-reward-map" style="--x:52%;--y:84.6%;--w:44%;--h:8.2%" aria-label="Kembali ke peta"></button>
+        </div>
+        <div id="m3-feedback" class="m1-feedback" hidden><img id="m3-feedback-art" alt=""></div>
+        <div id="m3-dialog" class="help-dialog" hidden>
+          <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="m3-dialog-title">
+            <h2 id="m3-dialog-title">AI NOVA</h2>
+            <p id="m3-dialog-text"></p>
+            <p id="m3-guide-note" class="guide-note" hidden></p>
+            <div id="m3-guide-taps" class="guide-taps" hidden></div>
+            <p id="m3-guide-ai" class="guide-ai" hidden></p>
+            <button type="button" id="m3-dialog-close">Tutup</button>
+          </div>
+        </div>
+        <div class="mission-sheet" hidden>
+          <div class="mission-help" data-bukti-tunjuk="Cari baki air, kemudian cari beza dengan 1 liter. Ini petunjuk visual, bukan AI.">
+            <button type="button" data-help="dengar">DENGAR</button>
+            <button type="button" data-help="ai" aria-label="Bantu AI">BANTU AI</button>
+          </div>
+      <button type="button" class="action map-back" id="back-to-map-three">Kembali ke Peta</button>
+      <header class="header">
+        <p class="eyebrow">Misi 3</p>
+        <h1>Tangki Rosak</h1>
+        <p class="lead">Tutup injap yang bocor, kemudian isi tangki hingga 1 L.</p>
+      </header>
+
+      <section class="learn card" aria-label="Peringkat Tangki Rosak">
+        <ol class="phases">
+          <li class="phase is-active" id="m3-phase-fikir">1. Fikir</li>
+          <li class="phase is-locked" id="m3-phase-eksperimen">2. Eksperimen</li>
+          <li class="phase is-locked" id="m3-phase-buktikan">3. Buktikan</li>
+        </ol>
+
+        <div id="m3-fikir-panel">
+          <h2>Fikir</h2>
+          <p data-speak="Satu liter sama dengan berapa mililiter?">1 L sama dengan berapa mL?</p>
+          <form class="answer-form" id="m3-fikir-form">
+            <label for="m3-fikir-input">Jawapan kamu (mL)</label>
+            <input id="m3-fikir-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="mL">
+            <button type="submit" class="action check">Semak</button>
+            <button type="button" class="action hint-button" id="m3-hint-button">Petunjuk</button>
+          </form>
+          <p id="m3-fikir-feedback" class="feedback"></p>
+          <p id="m3-fikir-hint" class="hint" hidden>Petunjuk: 1 liter sama dengan 1000 mililiter.</p>
+        </div>
+
+        <div id="m3-eksperimen-note" hidden>
+          <h2>Eksperimen</h2>
+          <p id="m3-eksperimen-status" data-speak="Tangki ada 700 mililiter dan bocor 100 mililiter. Tutup injap, kemudian kira air yang perlu ditambah.">Tangki ada 700 mL dan bocor tepat 100 mL. Tekan Tutup injap.</p>
+          <p>Selepas injap ditutup, baca aras air. Kemudian kira air yang perlu ditambah untuk menjadi 1000 mL.</p>
+        </div>
+
+        <div id="m3-calc-panel" hidden>
+          <p class="equation">1000 mL − 600 mL = ?</p>
+          <form class="answer-form" id="m3-calc-form">
+            <label for="m3-calc-input">Air yang perlu ditambah (mL)</label>
+            <input id="m3-calc-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="mL">
+            <button type="submit" class="action check">Semak</button>
+            <button type="button" class="action hint-button" id="m3-calc-hint-button">Petunjuk</button>
+          </form>
+          <p id="m3-calc-feedback" class="feedback"></p>
+          <p id="m3-calc-hint" class="hint" hidden>Petunjuk: tolak 600 daripada 1000. Jawapan dalam mL.</p>
+        </div>
+
+        <div id="m3-bukti-panel" hidden>
+          <h2>Buktikan</h2>
+          <p>Jawab soalan ini sendiri. Tiada petunjuk untuk soalan ini.</p>
+          <p class="equation" data-speak="Tangki ada 850 mililiter. Air bocor 150 mililiter. Sasaran ialah 1 liter. Berapa mililiter perlu ditambah?">Tangki ada 850 mL. Air bocor 150 mL. Sasaran ialah 1 L. Berapa mL perlu ditambah?</p>
+          <form class="answer-form" id="m3-bukti-form">
+            <label for="m3-bukti-input">Air yang perlu ditambah (mL)</label>
+            <input id="m3-bukti-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="mL">
+            <button type="submit" class="action check">Semak</button>
+          </form>
+          <p id="m3-bukti-feedback" class="feedback"></p>
+        </div>
+
+        <div class="record" aria-live="polite">
+          <h2>Rekod sesi</h2>
+          <p class="scores">
+            <span class="score ok">Betul: <strong id="m3-correct-count">0</strong></span>
+            <span class="score bad">Salah: <strong id="m3-incorrect-count">0</strong></span>
+          </p>
+          <ul id="m3-attempt-log">
+            <li class="log-empty">Belum ada cubaan.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="stage" aria-label="Tangki rosak">
+        <div class="tank-card">
+          <div class="m3-tank is-leaking" id="m3-tank">
+            <div class="m3-gauge">
+              <div class="m3-cylinder" id="m3-cylinder">
+                <div class="m3-water" id="m3-water"></div>
+              </div>
+              <div class="m3-scale" id="m3-scale" aria-hidden="true"></div>
+            </div>
+            <div class="m3-leaks" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <p class="reading">Aras air: <strong id="m3-volume-text">700 mL</strong></p>
+        </div>
+        <div class="controls">
+          <button type="button" class="action valve" id="m3-valve">Tutup injap</button>
+          <button type="button" class="reserve" id="m3-transfer" disabled>
+            <span class="reserve-body"><span class="reserve-fill" id="m3-reserve-fill"></span></span>
+            <span>Pindah 400 mL dari simpanan</span>
+          </button>
+          <button type="button" class="action reset" id="m3-reset">Set Semula</button>
+          <p id="m3-message" class="message" role="status">Kira dahulu: 1 L sama dengan berapa mL?</p>
+        </div>
+      </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission-four" class="mission-screen" hidden>
+      <div class="mission-frame" id="m4-frame">
+        <img class="mission-art" id="m4-art" src="assets/screens/m4/m4_fikir.png" alt="Misi 4 Fikir. Pilih dua paip yang jumlahnya 750 mL.">
+        <button type="button" class="m1-hotspot" id="m4-picture-back" style="--x:1.5%;--y:1%;--w:16%;--h:8%" aria-label="Kembali ke peta"></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m4-fikir-only" id="m4-choice-pair" data-m4-choice="250+500" data-cal="m4fpair" style="--x:5%;--y:72.4%;--w:90%;--h:4.6%" aria-label="250 campur 500"><span class="m2-exp-label">250+500</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m4-fikir-only" id="m4-choice-low" data-m4-choice="250+200" data-cal="m4flow" style="--x:5%;--y:77.8%;--w:90%;--h:5.2%" aria-label="250 campur 200"><span class="m2-exp-label">250+200</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m4-fikir-only" id="m4-choice-high" data-m4-choice="500+200" data-cal="m4fhigh" style="--x:5%;--y:83.5%;--w:90%;--h:5%" aria-label="500 campur 200"><span class="m2-exp-label">500+200</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m4-fikir-only" id="m4-fikir-dengar" data-cal="m4fd" style="--x:3%;--y:89.5%;--w:32%;--h:5.5%" aria-label="Dengar soalan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <button type="button" class="m1-hotspot m2-exp-spot m4-fikir-only" id="m4-fikir-bantu" data-cal="m4fb" style="--x:66%;--y:89.5%;--w:30%;--h:5.5%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        <div id="m4-exp-layer" hidden>
+          <div id="m4-exp-water" class="m2-exp-water" data-cal="m4water">
+            <div id="m4-exp-clip" class="m2-exp-clip">
+              <div id="m4-exp-fill" class="m2-exp-fill"><i class="m2-exp-surface" aria-hidden="true"></i></div>
+            </div>
+            <p id="m4-exp-level" class="m2-exp-level">0 mL</p>
+            <i class="m2-exp-handle" aria-hidden="true"></i>
+          </div>
+          <div id="m4-sensor" class="m4-sensor m2-exp-spot" data-cal="m4sensor" style="--x:73.7%;--y:37.5%;--w:8%;--h:6%" aria-hidden="true"></div>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-pipe-a" data-m4-pipe="250" data-cal="m4p250" style="--x:7.9%;--y:64.4%;--w:23.3%;--h:13.7%" aria-label="Paip 250 mililiter"><span class="m2-exp-label">250</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-pipe-b" data-m4-pipe="500" data-cal="m4p500" style="--x:38.9%;--y:63.8%;--w:25.3%;--h:14.6%" aria-label="Paip 500 mililiter"><span class="m2-exp-label">500</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-pipe-c" data-m4-pipe="200" data-cal="m4p200" style="--x:70.1%;--y:64.6%;--w:25.7%;--h:13%" aria-label="Paip 200 mililiter"><span class="m2-exp-label">200</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-exp-reset" data-cal="m4reset" style="--x:27.5%;--y:78.6%;--w:49.4%;--h:5.8%" aria-label="Set semula"><span class="m2-exp-label">Set semula</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-exp-dengar" data-cal="m4ed" style="--x:3%;--y:89.5%;--w:32%;--h:5.5%" aria-label="Dengar arahan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-exp-bantu" data-cal="m4eb" style="--x:66%;--y:89.5%;--w:32.3%;--h:6.7%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        </div>
+        <div id="m4-proof-layer" hidden>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-proof-full" data-m4-proof="750" data-cal="m4full" style="--x:4%;--y:74.8%;--w:30%;--h:8.7%" aria-label="750 mililiter"><span class="m2-exp-label">750</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-proof-low" data-m4-proof="200" data-cal="m4low" style="--x:36%;--y:74.8%;--w:28%;--h:8.7%" aria-label="200 mililiter"><span class="m2-exp-label">200</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-proof-add" data-m4-proof="500" data-cal="m4add" style="--x:66%;--y:74.8%;--w:30%;--h:8.7%" aria-label="500 mililiter"><span class="m2-exp-label">500</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-proof-dengar" data-cal="m4pd" style="--x:3%;--y:86%;--w:32%;--h:5.5%" aria-label="Dengar soalan"><span class="m2-exp-label">Dengar</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+          <button type="button" class="m1-hotspot m2-exp-spot" id="m4-proof-bantu" data-cal="m4pb" style="--x:66%;--y:86%;--w:30%;--h:5.5%" aria-label="Bantu AI"><span class="m2-exp-label">Bantu</span><i class="m2-exp-handle" aria-hidden="true"></i></button>
+        </div>
+        <div id="m4-reward" class="m1-reward" hidden>
+          <img class="m1-reward-art" src="assets/screens/rewards/misi_selesai.png" alt="Tahniah! Misi selesai. Anda telah memperolehi lencana baharu.">
+          <div class="m1-reward-badge"><img src="assets/badges/m4_badge.png" alt="Lencana Misi 4"></div>
+          <button type="button" class="m1-hotspot" id="m4-reward-next" style="--x:4%;--y:84.6%;--w:46%;--h:8.2%" aria-label="Kembali ke peta"></button>
+          <button type="button" class="m1-hotspot" id="m4-reward-map" style="--x:52%;--y:84.6%;--w:44%;--h:8.2%" aria-label="Kembali ke peta"></button>
+        </div>
+        <div id="m4-feedback" class="m1-feedback" hidden><img id="m4-feedback-art" alt=""></div>
+        <div id="m4-dialog" class="help-dialog" hidden>
+          <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="m4-dialog-title">
+            <h2 id="m4-dialog-title">AI NOVA</h2>
+            <p id="m4-dialog-text"></p>
+            <p id="m4-guide-note" class="guide-note" hidden></p>
+            <div id="m4-guide-taps" class="guide-taps" hidden></div>
+            <p id="m4-guide-ai" class="guide-ai" hidden></p>
+            <button type="button" id="m4-dialog-close">Tutup</button>
+          </div>
+        </div>
+        <div class="mission-sheet" hidden>
+          <div class="mission-help" data-bukti-tunjuk="Gabungkan 2 ratus dan 3 ratus. Ini petunjuk visual, bukan AI.">
+            <button type="button" data-help="dengar">DENGAR</button>
+            <button type="button" data-help="ai" aria-label="Bantu AI">BANTU AI</button>
+          </div>
+          <button type="button" class="action map-back" id="back-to-map-four">Kembali ke Peta</button>
+          <header class="header">
+            <p class="eyebrow">Misi 4</p>
+            <h1>Bengkel Jurutera Muda</h1>
+            <p class="lead">Gabungkan paip supaya bengkel mendapat air yang cukup.</p>
+          </header>
+          <section class="learning card" aria-label="Tiga peringkat Misi 4">
+            <ol class="phases">
+              <li class="phase is-active" id="m4-phase-fikir">1. Fikir</li>
+              <li class="phase is-locked" id="m4-phase-eksperimen">2. Eksperimen</li>
+              <li class="phase is-locked" id="m4-phase-buktikan">3. Buktikan</li>
+            </ol>
+            <div id="m4-fikir-panel">
+              <h2>Fikir</h2>
+              <p data-speak="Jurutera perlu menyediakan air sebanyak 1 liter. Berapa mililiter itu?">Jurutera perlu menyediakan air sebanyak 1 L. Berapa mL itu?</p>
+              <form class="answer-form" id="m4-fikir-form">
+                <label for="m4-fikir-input">Jawapan kamu (mL)</label>
+                <input id="m4-fikir-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="mL">
+                <button type="submit" class="action check">Semak</button>
+                <button type="button" class="action hint-button" id="m4-hint-button">Petunjuk</button>
+              </form>
+              <p id="m4-fikir-feedback" class="feedback"></p>
+              <p id="m4-fikir-hint" class="hint" hidden>Petunjuk: 1 liter sama dengan 1000 mililiter.</p>
+            </div>
+            <div id="m4-eksperimen-note" hidden>
+              <h2>Eksperimen</h2>
+              <p id="m4-eksperimen-status" data-speak="Aktifkan dua paip supaya jumlah air ialah 750 mililiter.">Aktifkan dua paip supaya jumlahnya 750 mL. Gunakan paip 250 mL dan paip 500 mL.</p>
+            </div>
+            <div id="m4-bukti-panel" hidden>
+              <h2>Buktikan</h2>
+              <p>Jawab soalan ini sendiri. Tiada petunjuk untuk soalan ini.</p>
+              <p class="equation" data-speak="Seorang jurutera gabungkan 200 mililiter dan 300 mililiter. Berapakah jumlahnya?">Seorang jurutera gabungkan 200 mL dan 300 mL. Berapakah jumlahnya?</p>
+              <form class="answer-form" id="m4-bukti-form">
+                <label for="m4-bukti-input">Jumlah air (mL)</label>
+                <input id="m4-bukti-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="mL">
+                <button type="submit" class="action check">Semak</button>
+              </form>
+              <p id="m4-bukti-feedback" class="feedback"></p>
+            </div>
+            <div class="record" aria-live="polite">
+              <h2>Rekod sesi</h2>
+              <p class="scores">
+                <span class="score ok">Betul: <strong id="m4-correct-count">0</strong></span>
+                <span class="score bad">Salah: <strong id="m4-incorrect-count">0</strong></span>
+              </p>
+              <ul id="m4-attempt-log"><li class="log-empty">Belum ada cubaan.</li></ul>
+            </div>
+          </section>
+          <section class="stage" aria-label="Paip bengkel">
+            <div class="tank-card">
+              <div class="m4-gauge">
+                <div class="m4-cylinder" id="m4-cylinder">
+                  <div class="m4-water" id="m4-water"></div>
+                </div>
+              </div>
+              <p class="reading">Jumlah paip: <strong id="m4-volume-text">0 mL</strong></p>
+            </div>
+            <div class="controls">
+              <button type="button" class="action pipe" id="m4-pipe-250" data-pipe="250">Paip 250 mL</button>
+              <button type="button" class="action pipe" id="m4-pipe-500" data-pipe="500">Paip 500 mL</button>
+              <button type="button" class="action pipe" id="m4-pipe-750" data-pipe="750">Paip 750 mL</button>
+              <button type="button" class="action reset" id="m4-reset">Set Semula</button>
+              <p id="m4-message" class="message" role="status">Kira dahulu: 1 L sama dengan berapa mL?</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section id="koleksi-screen" class="mission-screen" hidden aria-label="Koleksi Lencana">
+      <div class="mission-frame" id="koleksi-frame">
+        <img class="mission-art" id="koleksi-art" src="assets/screens/rewards/koleksi_lencana.png" alt="Koleksi Lencana. Kumpul 4 lencana untuk menyelamatkan Kota Air.">
+        <div id="koleksi-bar" class="koleksi-bar koleksi-spot" style="--x:14.4%;--y:37.7%;--w:50%;--h:1.6%"><div id="koleksi-fill" class="koleksi-fill"></div><i class="koleksi-handle" aria-hidden="true"></i></div>
+        <i id="koleksi-mile-1" class="koleksi-mile koleksi-spot" style="--x:14.6%;--y:37.5%;--w:4.3%;--h:2.5%" aria-hidden="true"><i class="koleksi-handle" aria-hidden="true"></i></i>
+        <i id="koleksi-mile-2" class="koleksi-mile koleksi-spot" style="--x:30.8%;--y:37.5%;--w:4.2%;--h:2.6%" aria-hidden="true"><i class="koleksi-handle" aria-hidden="true"></i></i>
+        <i id="koleksi-mile-3" class="koleksi-mile koleksi-spot" style="--x:46.7%;--y:37.2%;--w:4.2%;--h:2.6%" aria-hidden="true"><i class="koleksi-handle" aria-hidden="true"></i></i>
+        <i id="koleksi-mile-4" class="koleksi-mile koleksi-spot" style="--x:62%;--y:37.5%;--w:4.2%;--h:2.6%" aria-hidden="true"><i class="koleksi-handle" aria-hidden="true"></i></i>
+        <div id="koleksi-badge-1" class="koleksi-badge koleksi-spot" style="--x:7.4%;--y:43.6%;--w:39.8%;--h:15.9%"><img src="assets/badges/m1_badge.png" alt="Lencana Makmal Ukur Air"><i class="koleksi-handle" aria-hidden="true"></i></div>
+        <div id="koleksi-badge-2" class="koleksi-badge koleksi-spot" style="--x:55%;--y:43.9%;--w:42.8%;--h:16.1%"><img src="assets/badges/m2_badge.png" alt="Lencana Gua Batu Misteri"><i class="koleksi-handle" aria-hidden="true"></i></div>
+        <div id="koleksi-badge-3" class="koleksi-badge koleksi-spot" style="--x:7.1%;--y:66.2%;--w:39.8%;--h:16.3%"><img src="assets/badges/m3_badge.png" alt="Lencana Stesen Tangki Air"><i class="koleksi-handle" aria-hidden="true"></i></div>
+        <div id="koleksi-badge-4" class="koleksi-badge koleksi-spot" style="--x:54.4%;--y:66.5%;--w:41%;--h:17.1%"><img src="assets/badges/m4_badge.png" alt="Lencana Bengkel Jurutera Muda"><i class="koleksi-handle" aria-hidden="true"></i></div>
+        <button type="button" id="koleksi-tahniah" class="m1-hotspot koleksi-spot" style="--x:28%;--y:91.1%;--w:44%;--h:5.5%" aria-label="Tahniah. Kembali ke peta"><i class="koleksi-handle" aria-hidden="true"></i></button>
+      </div>
+      <div id="koleksi-editor" class="m2-exp-editor" hidden>
+        <p id="koleksi-note">Seret lencana, bar kemajuan, titik atau butang TAHNIAH. Seret sudut kuning untuk ubah saiz.</p>
+        <pre id="koleksi-readout"></pre>
+        <button type="button" id="koleksi-save">SIMPAN</button>
+        <button type="button" id="koleksi-copy">SALIN TETAPAN</button>
+        <button type="button" id="koleksi-reset">SET SEMULA</button>
+        <button type="button" id="koleksi-close">TUTUP EDITOR</button>
+      </div>
+    </section>
+      <div id="m34-editor" class="m2-exp-editor" hidden>
+        <p id="m34-note">Seret kotak atau sudut kuning. Jawapan tidak dihantar semasa menyunting.</p>
+        <div id="m34-fields"></div>
+        <pre id="m34-readout"></pre>
+        <button type="button" id="m34-save">SIMPAN</button>
+        <button type="button" id="m34-copy">SALIN TETAPAN</button>
+        <button type="button" id="m34-close">TUTUP EDITOR</button>
+      </div>
+  </main>
+  <div id="help-dialog" class="help-dialog" hidden>
+    <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="help-title">
+      <h2 id="help-title">AI Nova</h2>
+      <p id="help-text"></p>
+      <button type="button" id="help-close">Tutup</button>
+    </div>
+  </div>
+  <script src="guide-help.js"></script>
+  <script src="nova-local.js"></script>
+  <script src="nova-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
