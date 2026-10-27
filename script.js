@@ -3566,17 +3566,38 @@
   function revealReward(rewardId) {
     var reward = document.getElementById(rewardId);
     var art;
+    var badges;
+    var waits;
+    var index;
+    function warmBadge(img) {
+      var path = img.getAttribute("src");
+      if (!path) {
+        return Promise.resolve(true);
+      }
+      return warmImage(path).then(function (ok) {
+        return ok ? decodeNode(img) : false;
+      });
+    }
     if (!reward) {
       return Promise.resolve(false);
     }
     art = reward.querySelector(".m1-reward-art");
-    return assignArt(art, "assets/screens/rewards/misi_selesai.png", art ? (art.getAttribute("alt") || "") : "").then(function (ready) {
-      if (!ready) {
-        return false;
+    badges = reward.querySelectorAll(".m1-reward-badge img");
+    waits = [assignArt(art, "assets/screens/rewards/misi_selesai.png", art ? (art.getAttribute("alt") || "") : "")];
+    for (index = 0; index < badges.length; index += 1) {
+      if (!badges[index].hidden) {
+        waits.push(warmBadge(badges[index]));
+      }
+    }
+    return Promise.all(waits).then(function (results) {
+      for (index = 0; index < results.length; index += 1) {
+        if (!results[index]) {
+          return false;
+        }
       }
       reward.hidden = false;
       perfLog("reward-shown", rewardId);
-      return true;
+      return afterPaint();
     });
   }
 
