@@ -2052,6 +2052,10 @@ body.is-pouring .beaker.selected .beaker-body {
   user-select: none;
 }
 
+.m1-feedback .feedback-hotspot {
+  z-index: 2;
+}
+
 .m1-reward {
   position: absolute;
   inset: 0;
